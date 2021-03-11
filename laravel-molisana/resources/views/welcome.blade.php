@@ -168,8 +168,12 @@
           <h3>LE LUNGHE</h3>
           @foreach ($array as $key => $type)
             @if($type['tipo'] === 'lunga')
-              {{ $type['titolo'] }} <br/> <br/>
-              {{ $type['descrizione'] }} <br/> <br/>
+              {{-- {{ $type['titolo'] }} <br/> <br/>
+              {{ $type['descrizione'] }} <br/> <br/> --}}
+
+              <div class="product-image">
+                <img src="{{ $type['src'] }}" alt="">
+              </div>
             @endif
           @endforeach
         </div>
@@ -178,8 +182,12 @@
           <h3>LE CORTE</h3>
           @foreach ($array as $key => $type)
             @if($type['tipo'] === 'corta')
-              {{ $type['titolo'] }} <br/> <br/>
-              {{ $type['descrizione'] }} <br/> <br/>
+              {{-- {{ $type['titolo'] }} <br/> <br/>
+              {{ $type['descrizione'] }} <br/> <br/> --}}
+
+              <div class="product-image">
+                <img src="{{ $type['src'] }}" alt="">
+              </div>
             @endif
           @endforeach
         </div>
@@ -188,8 +196,12 @@
           <h3>LE CORTISSIME</h3>
           @foreach ($array as $key => $type)
             @if($type['tipo'] === 'cortissima')
-              {{ $type['titolo'] }} <br/> <br/>
-              {{ $type['descrizione'] }} <br/> <br/>
+              {{-- {{ $type['titolo'] }} <br/> <br/>
+              {{ $type['descrizione'] }} <br/> <br/> --}}
+
+              <div class="product-image">
+                <img src="{{ $type['src'] }}" alt="">
+              </div>
             @endif
           @endforeach
         </div>
