@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-
+        <link rel="stylesheet" href="css/app.css">
     <body>
 
       @php
@@ -142,25 +142,7 @@
       @endphp
 
 
-      <br/>
-      <br/>
-
-      {{-- TITOLO --}}
-      <div class="title">
-          <h1> LA MOLISANA</h1>
-      </div>
-
-      {{-- NAVBAR --}}
-      <div class="navbar">
-        <ul>
-          <li>Home</li>
-          <li>Prodotti</li>
-          <li>News</li>
-        </ul>
-      </div>
-
-      <br/>
-      <br/>
+      @include('components.header')
 
       {{-- PRODOTTI --}}
       <div class="products">
