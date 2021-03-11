@@ -165,13 +165,33 @@
       {{-- PRODOTTI --}}
       <div class="products">
         <div class="paste-lunghe">
-
+          <h3>LE LUNGHE</h3>
+          @foreach ($array as $key => $type)
+            @if($type['tipo'] === 'lunga')
+              {{ $type['titolo'] }} <br/> <br/>
+              {{ $type['descrizione'] }} <br/> <br/>
+            @endif
+          @endforeach
         </div>
+
         <div class="paste-corte">
-
+          <h3>LE CORTE</h3>
+          @foreach ($array as $key => $type)
+            @if($type['tipo'] === 'corta')
+              {{ $type['titolo'] }} <br/> <br/>
+              {{ $type['descrizione'] }} <br/> <br/>
+            @endif
+          @endforeach
         </div>
-        <div class="paste-cortissime">
 
+        <div class="paste-cortissime">
+          <h3>LE CORTISSIME</h3>
+          @foreach ($array as $key => $type)
+            @if($type['tipo'] === 'cortissima')
+              {{ $type['titolo'] }} <br/> <br/>
+              {{ $type['descrizione'] }} <br/> <br/>
+            @endif
+          @endforeach
         </div>
       </div>
 
