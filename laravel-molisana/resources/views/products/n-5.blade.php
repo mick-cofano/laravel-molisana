@@ -128,7 +128,7 @@ $array = json_decode($products, true);
 
 @include('components.header')
 
-@foreach ($array as $key => $type)
+{{-- @foreach ($array as $key => $type)
   @if($type['tipo'] === 'lunga')
     {{ $type['titolo'] }} <br/> <br/>
     {{ $type['descrizione'] }} <br/> <br/>
@@ -138,4 +138,11 @@ $array = json_decode($products, true);
       <img src="{{ $type['src-p'] }}" alt="">
     </div>
   @endif
-@endforeach
+@endforeach --}}
+
+
+
+<h2>{{ $array[1]['titolo'] }}</h2>
+<img src="{{ $array[1]['src-h'] }}" alt="">
+<img src="{{ $array[1]['src-p'] }}" alt="">
+<h4>{{ $array[1]['descrizione'] }}</h4>
